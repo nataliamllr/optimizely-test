@@ -1,0 +1,125 @@
+{
+  "version": "2",
+  "projectId": "8303652710",
+  "experiments": [
+    {
+      "status": "Running",
+      "audienceIds": [],
+      "variations": [
+        {
+          "id": "8308440390",
+          "key": "default"
+        },
+        {
+          "id": "8302602288",
+          "key": "bucket_b"
+        }
+      ],
+      "id": "8295077696",
+      "key": "test_experiment_key",
+      "layerId": "8301920696",
+      "trafficAllocation": [
+        {
+          "entityId": "8308440390",
+          "endOfRange": 5000
+        },
+        {
+          "entityId": "8302602288",
+          "endOfRange": 10000
+        }
+      ],
+      "forcedVariations": {
+        "user123": "bucket_b"
+      }
+    },
+    {
+      "status": "Running",
+      "audienceIds": [],
+      "variations": [
+        {
+          "id": "8307363604",
+          "key": "one_step_checkout"
+        },
+        {
+          "id": "8299566869",
+          "key": "two_step_checkout"
+        }
+      ],
+      "id": "8297209105",
+      "key": "checkout_flow_experiment",
+      "layerId": "8302317827",
+      "trafficAllocation": [
+        {
+          "entityId": "8307363604",
+          "endOfRange": 5000
+        },
+        {
+          "entityId": "8299566869",
+          "endOfRange": 10000
+        }
+      ],
+      "forcedVariations": {}
+    },
+    {
+      "status": "Running",
+      "audienceIds": [],
+      "variations": [
+        {
+          "id": "8297987589",
+          "key": "sort_by_price"
+        },
+        {
+          "id": "8303574773",
+          "key": "sort_by_name"
+        }
+      ],
+      "id": "8309342263",
+      "key": "sorting_experiment",
+      "layerId": "8297877802",
+      "trafficAllocation": [
+        {
+          "entityId": "8297987589",
+          "endOfRange": 5000
+        },
+        {
+          "entityId": "8303574773",
+          "endOfRange": 10000
+        }
+      ],
+      "forcedVariations": {}
+    }
+  ],
+  "audiences": [],
+  "groups": [],
+  "attributes": [],
+  "revision": "20",
+  "events": [
+    {
+      "experimentIds": [],
+      "id": "8305623039",
+      "key": "checkout_flow_experiment"
+    },
+    {
+      "experimentIds": [
+        "8295077696"
+      ],
+      "id": "8305730238",
+      "key": "checkbox_clicked"
+    },
+    {
+      "experimentIds": [
+        "8297209105"
+      ],
+      "id": "8306372492",
+      "key": "checkout_complete"
+    },
+    {
+      "experimentIds": [
+        "8309342263"
+      ],
+      "id": "8307431163",
+      "key": "add_to_cart"
+    }
+  ],
+  "accountId": "8304501141"
+}
